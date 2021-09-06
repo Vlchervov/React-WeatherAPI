@@ -14,6 +14,24 @@ export const FormSearch = styled.form`
   }
 `;
 
+export const WeatherList = styled.div `
+  opacity: ${({change}) => change ? 1 : 0};
+
+
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+      li {
+        list-style: none;
+        font-weight: 500;
+        font-size: 18px;
+      }
+`
+
 export const SearchButton = styled.button `
     font-size: 14px;
     width: 4.47vw;
@@ -42,10 +60,28 @@ export const ModalBody = styled.div `
     padding: 2rem;
     width: 400px;
     border-radius: 5px;
-    background: #fff;
+    background-image: url('https://his.ua/img/articles/3xim7lXbhX.jpg');
     height: 200px;
 
     li {
         list-style: none;
+        color: white;
+        font-size: 18px;
+        font: 500;
+    }
+
+    button {
+    cursor: pointer;
+    color: white;
+    font: 500;
+    position: relative;
+    top: 8vh;
+    left: 9.5vw;
+    font-size: 14px;
+    width: 68px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: px;
+    border: none;
     }
 `
